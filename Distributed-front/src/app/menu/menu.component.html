@@ -1,0 +1,21 @@
+<div class="product-list">
+    <h2>Product</h2>
+    <button (click)="onShowProductChoose()">Choose a product</button>
+    <div *ngIf="showProductChoose">
+      <app-product-choose></app-product-choose>
+    </div>
+  </div>
+  <div class="create-user">
+    <h2>New User here</h2>
+    <button (click)="onShowCreateuser()">New User</button>
+    <div *ngIf="showCreatuser">
+      <app-create-user></app-create-user>
+    </div>
+  </div>
+  <div class="checkpoint">
+    <h2>Check membership point here</h2>
+    <button (click)="onShowCheckpoint()">check</button>
+    <div *ngIf="showCheckpoint">
+      <app-checkpoint></app-checkpoint>
+    </div>
+  </div>
